@@ -1,0 +1,146 @@
+---
+title: "RRassignment"
+author: "liuhongyang"
+date: "11/20/2019"
+output: html_document
+---
+
+
+
+Befor we start, change the work directory
+```{r echo=TRUE}
+setwd("/Users/liuhongyang/Desktop/")
+```
+
+
+
+
+## Loading and preprocessing the data
+
+### 1. Load the data 
+```{r echo=TRUE}
+Activity_data = read.csv('activity.csv',header=TRUE, sep = ",")
+head(Activity_data)
+```
+
+### 2.Process/transform the data(if necessary) into a format suitable for your analysis
+```{r echo=TRUE}
+df = data.frame(Activity_data)
+head(df)
+```
+
+## What is mean total number of steps taken per day?
+
+### 1.Calculate the total number of steps taken per day
+
+```{r echo=TRUE}
+total_steps <- aggregate(df$steps,by=list(df$date), FUN=sum, na.rm=TRUE)
+
+#rename the data frame
+names(total_steps) <- c("date", "total")
+#check data
+head(total_steps)
+```
+
+### 2.Make a histogram of the total number of steps taken each day
+```{r echo=TRUE}
+library(ggplot2)
+
+ggplot(total_steps, aes(date, total)) + 
+  geom_bar(stat = "identity", colour = "yellow",fill = "dark blue", width = 0.5) + 
+  theme(axis.text.x = element_text(angle = 90,hjust = 0))
+
+```
+
+### 3.Calculate and report the mean and median of the total number of steps taken per day
+
+```{r echo=TRUE}
+totalsteps_mean <- mean(total_steps$total)
+totalsteps_median <- median(total_steps$total)
+
+paste("mean of the toal number of steps taken per day:",totalsteps_mean)
+
+paste("median of the toal number of steps taken per day:",totalsteps_median)
+
+
+```
+
+## What is the average daily activity pattern?
+
+### 1.Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
+```{r echo=TRUE}
+steps_by_interval <- aggregate(df$steps,by = list(interval= df$interval), FUN=mean, na.rm=TRUE)
+
+colnames(steps_by_interval) <- c("interval", "steps")
+
+library(ggplot2)
+ggplot(steps_by_interval, aes(x=interval, y=steps)) + geom_line(color="yellow", size=1) + theme_bw()
+```
+
+### 2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
+```{r echo=TRUE}
+
+steps_by_interval[which.max(steps_by_interval$steps),]
+
+```
+
+# Imputing missing values
+
+
+### 1.Calculate and report the total number of missing values in the dataset 
+```{r echo=TRUE}
+the_num_of_missing_value = sum(is.na((Activity_data$steps)))
+the_num_of_missing_value 
+```
+
+### 2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated.
+
+
+```{r echo=TRUE}
+
+na_position <- which (is.na(df$steps))
+
+mean_fill <- rep(mean(df$steps, na.rm=TRUE, time=length(the_num_of_missing_value)))
+
+df[na_position, "steps"] <- mean_fill
+```
+
+check if there are any missing values
+```{r echo=TRUE}
+missing_val <- sum(is.na(df$steps))
+missing_val
+```
+
+### 3.Create a new dataset that is equal to the original dataset but with the missing data filled in
+
+```{r echo=TRUE}
+head(df)
+```
+
+### 4.Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day
+
+
+```{r echo=TRUE}
+new_total_steps <- aggregate(df$steps,by=list(df$date), FUN=sum, na.rm=TRUE)
+
+#rename
+names(new_total_steps) <- c("date", "total")
+#check data
+head(new_total_steps)
+
+
+ggplot(new_total_steps , aes(date, total)) + 
+  geom_bar(stat = "identity", colour = "yellow",fill = "dark blue", width = 0.5) + 
+  theme(axis.text.x = element_text(angle = 90,hjust = 0))
+```
+```{r ehco=TRUE}
+totalsteps_mean <- mean(new_total_steps$total)
+totalsteps_median <- median(new_total_steps$total)
+
+paste("mean of the total number of steps taken per day:",totalsteps_mean)
+
+paste("median of the total number of steps taken per day:",totalsteps_median)
+
+```
+
+The values differ from the first part of the assignment. The mean and median of the total number of steps taken per day is large than the that in the first part of the assignment. Furthermore, the gap between mean and median of the steps taken per day has decreased.
