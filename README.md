@@ -18,9 +18,9 @@
 [Practical Data Science with R](https://matthewrenze.com/workshops/practical-data-science-with-r-workshop/)
 
 
-### Data Analytics
+### WQD 7003 Data Analytics
 
-### Parallel and Distributed
+### WQD 7008 Introduction to Parallel and Distributed Computing
 
 
 
