@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ba3ef6d-25da-44a5-a6ec-e41a4c84a1c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/cleanOilRate.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/year_csv.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1cwPkvinDkfRCOLsyv2PpmozoIE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dash-oil-gas-ternary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ba3ef6d-25da-44a5-a6ec-e41a4c84a1c7" name="Default Changelist" comment="" />
+      <created>1591436828395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591436828395</updated>
+      <workItem from="1591436838615" duration="9729000" />
+      <workItem from="1591459964007" duration="424000" />
+      <workItem from="1591496613785" duration="6489000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="372" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1591532269899">
+      <screen x="64" y="23" width="1216" height="777" />
+    </state>
+    <state x="421" y="372" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/64.23.1216.777@64.23.1216.777" timestamp="1591532269899" />
+    <state width="1174" height="43" key="GridCell.Tab.0.bottom" timestamp="1591508318599">
+      <screen x="64" y="23" width="1216" height="777" />
+    </state>
+    <state width="1238" height="210" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1591502832684" />
+    <state width="1174" height="43" key="GridCell.Tab.0.bottom/64.23.1216.777@64.23.1216.777" timestamp="1591508318599" />
+    <state width="1174" height="43" key="GridCell.Tab.0.center" timestamp="1591508318597">
+      <screen x="64" y="23" width="1216" height="777" />
+    </state>
+    <state width="1238" height="210" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1591502832682" />
+    <state width="1174" height="43" key="GridCell.Tab.0.center/64.23.1216.777@64.23.1216.777" timestamp="1591508318597" />
+    <state width="1174" height="43" key="GridCell.Tab.0.left" timestamp="1591508318597">
+      <screen x="64" y="23" width="1216" height="777" />
+    </state>
+    <state width="1238" height="210" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1591502832680" />
+    <state width="1174" height="43" key="GridCell.Tab.0.left/64.23.1216.777@64.23.1216.777" timestamp="1591508318597" />
+    <state width="1174" height="43" key="GridCell.Tab.0.right" timestamp="1591508318598">
+      <screen x="64" y="23" width="1216" height="777" />
+    </state>
+    <state width="1238" height="210" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1591502832683" />
+    <state width="1174" height="43" key="GridCell.Tab.0.right/64.23.1216.777@64.23.1216.777" timestamp="1591508318598" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dash_oil_gas_ternary$app.coverage" NAME="app Coverage Results" MODIFIED="1591502832671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
