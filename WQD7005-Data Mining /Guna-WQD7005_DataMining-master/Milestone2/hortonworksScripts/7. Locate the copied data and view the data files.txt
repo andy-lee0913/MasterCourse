@@ -1,0 +1,5 @@
+cd Documents/wqd7005/cleanedData
+ls
+cat cleanOilRate.csv
+cat cleanGoldRate.csv
+cat cleanCurrencyExchange.csv

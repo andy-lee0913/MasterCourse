@@ -1,0 +1,3 @@
+select * from oilRate;
+select * from currencyExchange;
+select * goldRate;

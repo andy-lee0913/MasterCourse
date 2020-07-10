@@ -1,0 +1,6 @@
+ls
+cd Documents
+mkdir wqd7005
+cd wqd7005
+mkdir cleanedData
+ls

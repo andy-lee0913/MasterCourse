@@ -1,0 +1,6 @@
+CREATE TABLE oilRate (Year int,Price double,Open double,High double,Low double,Close double,Change double) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+
+CREATE TABLE currencyExchange (MonthYear string,Price double,Open double,High double,Low double,Volume double,Change double) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+CREATE TABLE goldRate (MonthYear string,Price double,Open double,High double,Low double,Change double) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';

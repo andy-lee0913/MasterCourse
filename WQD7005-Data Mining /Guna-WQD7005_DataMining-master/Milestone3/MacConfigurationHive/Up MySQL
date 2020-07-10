@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Bring Up MySQL Server"
+sudo /usr/local/mysql/support-files/mysql.server start
+echo "Completed Bring Up MySQL Server"
